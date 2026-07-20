@@ -1,0 +1,12 @@
+.gamesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 24px;
+}
+.emptyState {
+  padding: 60px 20px;
+  color: #aab2c7;
+  text-align: center;
+  background: #151b2b;
+  border-radius: 16px;
+}

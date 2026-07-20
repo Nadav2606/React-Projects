@@ -1,0 +1,98 @@
+.gameCard {
+  overflow: hidden;
+  background: #151b2b;
+  border: 1px solid #29324b;
+  border-radius: 18px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.gameCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+
+.coverLink {
+  display: block;
+  height: 260px;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(145deg, #29216d, #10172c 70%);
+}
+.coverLink img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.coverPlaceholder {
+  display: grid;
+  height: 100%;
+  place-content: center;
+  place-items: center;
+  gap: 8px;
+}
+.coverPlaceholder span {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  padding-left: 4px;
+  background: #ff174f;
+  border-radius: 50%;
+}
+.coverPlaceholder small {
+  color: #c6cce0;
+}
+.cardBody {
+  padding: 18px;
+}
+.cardHeading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cardHeading p {
+  margin: 0 0 6px;
+  color: #887cff;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cardHeading h2 {
+  min-height: 48px;
+  margin: 0;
+  font-size: 1.08rem;
+}
+.favorite {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  color: #8d96ad;
+  background: #222a3e;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.favorite.active {
+  color: #fff;
+  background: #ff3d68;
+}
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 16px 0;
+  color: #909ab2;
+  font-size: 0.85rem;
+}
+.meta strong {
+  margin-left: auto;
+  color: #ffc857;
+}
+.detailsLink {
+  color: #aaa2ff;
+  text-decoration: none;
+  font-weight: 700;
+}

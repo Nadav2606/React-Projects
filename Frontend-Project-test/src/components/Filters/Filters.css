@@ -1,0 +1,20 @@
+.filters {
+  display: flex;
+  gap: 10px;
+}
+.filters select {
+  padding: 13px 35px 13px 12px;
+  color: #e7ebf6;
+  background: #171d2d;
+  border: 1px solid #303a56;
+  border-radius: 10px;
+}
+@media (max-width: 680px) {
+  .filters,
+  .filters select {
+    width: 100%;
+  }
+  .filters {
+    flex-direction: column;
+  }
+}

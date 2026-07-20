@@ -1,0 +1,13 @@
+.page { width: min(1180px, 90%); margin: 0 auto; }
+.hero { padding: 72px 0 42px; }
+.hero p { margin: 0; color: #8275ff; font-weight: 800; letter-spacing: .16em; }
+.hero h1 { max-width: 700px; margin: 10px 0; font-size: clamp(2.2rem, 6vw, 4.8rem); line-height: 1; }
+.hero span { color: #aab2c7; }
+.toolbar { display: flex; justify-content: space-between; gap: 16px; margin: 10px 0 42px; }
+.filters { display: flex; gap: 10px; }
+.filters select { padding: 13px 35px 13px 12px; color: #e7ebf6; background: #171d2d; border: 1px solid #303a56; border-radius: 10px; }
+.resultsTitle { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 18px; }
+.resultsTitle h2 { margin: 0; }
+.resultsTitle span { color: #7f899f; }
+@media (max-width: 780px) { .toolbar { align-items: stretch; flex-direction: column; } }
+@media (max-width: 680px) { .filters { flex-direction: column; }.filters select { width: 100%; } }
